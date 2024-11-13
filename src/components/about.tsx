@@ -1,15 +1,15 @@
 import Image from "next/image";
-import image from "../public/image/home.png";
+import aboutImage from "../image/home.png";
 
 export default function About() {
   return (
-    <div id="about">
-      <div className="flex flex-col-reverse justify-center items-center gap-3 capitalize bg-orange-100 p-[6rem_5%_1rem] sm:p-[8rem_5%_1rem] md:flex-row md:h-[100vh] md:p-[7rem_7%_1rem] lg:px-[9%] ">
+    <section>
+      <div className="flex flex-col-reverse justify-center items-center gap-5 capitalize bg-orange-100 p-[7rem_5%_2rem] sm:pt-[9rem] md:flex-row md:h-[100vh] md:p-[7rem_7%_3rem] lg:px-[9%]">
         <div className="md:basis-[40%]">
           <Image
-            src={image}
-            alt="about-image"
-            className="w-[250px] sm:w-[325px] md:w-[300px] lg:w-[350px] xl:w-[400px] m-auto"
+            src={aboutImage}
+            alt="about image"
+            className="w-[275px] sm:w-[325px] lg:w-[350px] xl:w-[425px] m-auto"
           />
         </div>
         <div className="md:basis-[60%]">
@@ -33,11 +33,11 @@ export default function About() {
             voluptatem distinctio aliquid maiores eos ab aspernatur, unde nam
             nihil ad tempore et.
           </p>
-          <button className="bg-[#c82800] p-[0.3rem_1rem] rounded-[1rem] text-[0.75rem] text-white font-[500] sm:text-[1rem] sm:p-[0.4rem_1.5rem] xl:text-[1.25rem] xl:p-[0.5rem_2.5rem] shadow-[0_0_15px_1px_rgb(200,40,0)]">
+          <button className="bg-[#c82800] p-[0.5rem_1.25rem] rounded-[1rem] text-[0.9rem] text-white font-[500] sm:text-[1rem] sm:px-[1.5rem] xl:text-[1.25rem] xl:px-[2.5rem] mt-[0.5rem] shadow-[0_0_15px_1px_rgb(200,40,0)]">
             Read More
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -1,20 +1,18 @@
-"use client"
-import HomePage from "../components/homePage" ;
-import About from "../components/about";
-import Services from "../components/services";
-import Portfolio from "../components/portfolio";
-import Contact from "..//components/contact";
-import Footer from  "../components/footer"
+"use client";
+import HomePage from "../components/Hero";
+import About from "../components/About";
+import Services from "../components/Services";
+import Portfolio from "../components/Portfolio";
+import Contact from "../components/Contact";
 
 export default function Home() {
   return (
     <div>
-        <HomePage />
-        <About />
-        <Services />
-        <Portfolio />
-        <Contact />
-        <Footer />
+      <HomePage />
+      <About />
+      <Services />
+      <Portfolio />
+      <Contact />
     </div>
   );
 }

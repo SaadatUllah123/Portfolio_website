@@ -1,17 +1,17 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import logoImage from "../public/image/logo.png";
-import { IoMdMenu } from "react-icons/io";
+import logoImage from "../image/logo.png";
 import { useState } from "react";
+import { IoMdMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
 
 export default function Header() {
-  let [menu, setMenu] = useState(false);
+  const [menu, setMenu] = useState(false);
   return (
     <div>
       <div className="bg-orange-200 w-[100%] capitalize flex justify-between items-center p-[1rem_5%] md:p-[1rem_7%] lg:px-[9%] xl:py-[1.5rem] fixed z-10 shadow-[0_0_15px_0px_rgb(200,40,0)]">
-        <Link href={"#home"}>
+        <Link href={"/"}>
           <Image
             src={logoImage}
             alt="logo"
@@ -32,35 +32,35 @@ export default function Header() {
           } `}
         >
           <Link
-            href={"#home"}
+            href={"/"}
             className="text-[#c82800]"
             onClick={() => setMenu(!menu)}
           >
             Home
           </Link>
           <Link
-            href={"#about"}
-            className="hover:text-[#c82800] "
+            href={"/about"}
+            className="hover:text-[#c82800]"
             onClick={() => setMenu(!menu)}
           >
             About
           </Link>
           <Link
-            href={"#services"}
+            href={"/services"}
             className="hover:text-[#c82800] "
             onClick={() => setMenu(!menu)}
           >
             services
           </Link>
           <Link
-            href={"#portfolio"}
+            href={"/portfolio"}
             className="hover:text-[#c82800] "
             onClick={() => setMenu(!menu)}
           >
             Portfolio
           </Link>
           <Link
-            href={"#contact"}
+            href={"/contact"}
             className="hover:text-[#c82800] "
             onClick={() => setMenu(!menu)}
           >

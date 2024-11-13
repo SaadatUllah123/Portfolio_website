@@ -1,18 +1,18 @@
 import Image from "next/image";
-import project_1 from "../public/image/project-1.jpg";
-import project_2 from "../public/image/project-2.jpg";
-import project_3 from "../public/image/project-3.jpg";
-import project_4 from "../public/image/project-4.jpg";
-import project_5 from "../public/image/project-5.jpg";
-import project_6 from "../public/image/project-6.jpg";
+import project_1 from "../image/project-1.jpg";
+import project_2 from "../image/project-2.jpg";
+import project_3 from "../image/project-3.jpg";
+import project_4 from "../image/project-4.jpg";
+import project_5 from "../image/project-5.jpg";
+import project_6 from "../image/project-6.jpg";
 
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 export default function Portfolio() {
   return (
-    <div id="portfolio">
-      <div className="bg-orange-100 text-center capitalize p-[4rem_5%_2rem] sm:p-[5rem_5%_2rem] md:p-[5rem_7%_2rem] lg:px-[9%] xl:pt-[6rem]">
-        <h1 className="text-[1.75rem] font-[700] sm:text-[2.25rem] xl:text-[3.25rem] mb-[1.5rem]">
+    <section>
+      <div className="bg-orange-100 text-center capitalize p-[6rem_5%_2rem] md:p-[7rem_7%_3rem] lg:px-[9%] xl:pt-[9rem]">
+        <h1 className="text-[2rem] font-[700] sm:text-[2.25rem] xl:text-[3.25rem] mb-[1.5rem]">
           latest <span className="text-[rgb(199,40,0)]">project </span>
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 ">
@@ -128,6 +128,6 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
